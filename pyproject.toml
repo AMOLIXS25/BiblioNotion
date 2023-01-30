@@ -1,0 +1,16 @@
+[tool.pdm]
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "amolixs", email = "wilmet.amaury@protonmail.com"},
+]
+dependencies = [
+    "pyside6>=6.4.2",
+    "pytest>=7.2.1",
+    "pyqt5>=5.15.8",
+]
+requires-python = ">=3.10,<3.11"
+license = {text = "MIT"}

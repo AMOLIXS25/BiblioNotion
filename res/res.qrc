@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="pic">
+    <file>pictures/icon_splash_screen.png</file>
+  </qresource>
+  <qresource prefix="qss">
+    <file>qss/styles.qss</file>
+  </qresource>
+</RCC>
