@@ -24,8 +24,8 @@ class SplashScreen(QMainWindow, Ui_MainWindow):
     def center_splash_screen(self):
         """Method that center the SplashScreen on the Screen"""
         available_screen_size: QRect = QScreen.availableGeometry(QApplication.primaryScreen())
-        pos_center_x: int = (available_screen_size.width() - self.width()) / 2
-        pos_center_y: int = (available_screen_size.height() - self.height()) / 2
+        pos_center_x: float = (available_screen_size.width() - self.width()) / 2
+        pos_center_y: float = (available_screen_size.height() - self.height()) / 2
         self.move(pos_center_x, pos_center_y)
 
     def loading(self):

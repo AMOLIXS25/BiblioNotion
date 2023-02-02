@@ -1,6 +1,13 @@
 <RCC>
   <qresource prefix="pic">
+    <file>pictures/menu.png</file>
     <file>pictures/icon_splash_screen.png</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file>pictures/icon_book.png</file>
+    <file>pictures/icon_logout.png</file>
+    <file>pictures/icon_note.png</file>
+    <file>pictures/icon_settings.png</file>
   </qresource>
   <qresource prefix="qss">
     <file>qss/styles.qss</file>
