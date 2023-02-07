@@ -4,6 +4,7 @@ from PySide6.QtGui import Qt, QScreen
 from PySide6.QtWidgets import QMainWindow, QApplication
 
 from uis.SplashScreenUi import Ui_MainWindow
+from views.HomeScreen import HomeScreen
 
 
 class SplashScreen(QMainWindow, Ui_MainWindow):
@@ -12,6 +13,7 @@ class SplashScreen(QMainWindow, Ui_MainWindow):
     def __init__(self):
         """SplashScreen's constructor"""
         super().__init__()  # Je fais appel au constructor de la classe parent
+        self.home_screen: HomeScreen = None
         self.setupUi(self)
         self.counter_loading: int = 40
         self.timer: QTimer = QTimer()
@@ -34,4 +36,14 @@ class SplashScreen(QMainWindow, Ui_MainWindow):
         if self.counter_loading >= 100:
             self.timer.stop()
             self.close()
+            self.launch_home_screen()
         self.counter_loading += 1
+
+    def launch_home_screen(self):
+        """Method that run the home screen"""
+        print("ok")
+        if self.home_screen is None:
+            self.home_screen = HomeScreen()
+            self.home_screen.show()
+        else:
+            self.home_screen = None

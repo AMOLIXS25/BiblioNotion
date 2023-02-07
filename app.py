@@ -3,7 +3,7 @@ import sys
 
 from PySide6.QtWidgets import QApplication
 
-from views.HomeScreen import HomeScreen
+from views.SplashScreen import SplashScreen
 
 
 def load_qss_style(qss_name_file: str, app: QApplication):
@@ -21,6 +21,6 @@ if __name__ == '__main__':
     # Je lance ma boucle d'événement en passant les paramètres de la console
     app: QApplication = QApplication(sys.argv)
     load_qss_style("res/qss/styles.qss", app)
-    test_ui = HomeScreen()
-    test_ui.show()
+    splash_screen: SplashScreen = SplashScreen()
+    splash_screen.show()
     app.exec()

@@ -4,6 +4,8 @@
     <file>pictures/icon_splash_screen.png</file>
   </qresource>
   <qresource prefix="icons">
+    <file>pictures/align-justify.svg</file>
+    <file>pictures/arrow-left.svg</file>
     <file>pictures/icon_book.png</file>
     <file>pictures/icon_logout.png</file>
     <file>pictures/icon_note.png</file>

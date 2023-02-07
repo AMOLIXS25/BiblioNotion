@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QMainWindow
 
 from Custom_Widgets.Widgets import loadJsonStyle
-from uis.TestUi2 import Ui_MainWindow
+from uis.HomeScreenUi import Ui_MainWindow
 
 
 class HomeScreen(QMainWindow):
@@ -9,4 +9,5 @@ class HomeScreen(QMainWindow):
         QMainWindow.__init__(self)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        self.setWindowTitle("Acceuil")
         loadJsonStyle(self, self.ui)

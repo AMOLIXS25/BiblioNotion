@@ -1,33 +1,60 @@
 {
+  "QMainWindow": [{
+    "title": "BiblioNotion",
+    "frameless": false
+  }],
   "QCustomSlideMenu": [{
     "name": "slide_menu",
     "defaultSize": [{
-      "width": 141,
-      "height": "auto"
+      "width": 200,
+      "height": "parent"
     }],
     "collapsedSize": [{
       "width": 0,
-      "height": 0
+      "height": "parent"
     }],
     "expandedSize": [{
-      "width": 141,
-      "height": "auto"
+      "width": 200,
+      "height": "parent"
     }],
     "toggleButton" : [{
-      "buttonName": "pushButton",
+      "buttonName": "slide_menu_button",
       "icons": [{
-        "whenMenuIsCollapsed": ":/pic/pictures/menu.png",
-        "whenMenuIsExpanded": ":/pic/pictures/icon_splash_screen.png"
+        "whenMenuIsCollapsed": ":/icons/pictures/align-justify.svg",
+        "whenMenuIsExpanded": ":/icons/pictures/arrow-left.svg"
       }]
     }],
     "menuTransitionAnimation": [{
-      "animationDuration": 1000,
+      "animationDuration": 600,
       "animationEasingCurve": "OutBack"
-    }],
-    "menuContainerStyle": [{
-      "whenMenuIsExpanded": [
-        "border: 2px solid rgb(9, 5, 13); background-color: rgb(9, 5, 13);"
-      ]
     }]
+  }],
+  "QStackedWidget": [{
+    "name": "main_pages_container",
+    "transitionAnimation": [
+      {
+        "fade": [{
+          "active": true,
+          "duration": 1000,
+          "easingCurve": "OutBack"
+        }],
+        "slide": [{
+          "active": true,
+          "duration": 1000,
+          "direction": "horizontal",
+          "easingCurve": "OutBack"
+        }]
+      }
+    ],
+    "navigation": [
+      {
+        "navigationButtons": [{
+          "library_button": "library_page",
+          "notes_button": "notes_page",
+          "settings_button": "settings_page",
+          "quit_button": "quit_page"
+        }]
+      }
+    ]
   }]
 }
