@@ -43,3 +43,24 @@ HomeScreen
     border-left: 2px solid rgb(254, 206, 47);
     background-color: #292929;
 }
+
+/*
+QuitDialog
+*/
+
+#quit_dialog QFrame {
+    border: none;
+}
+
+#quit_dialog #yes_no_button_container QPushButton {
+    border-radius: 10px;
+    padding: 8px;
+}
+
+#quit_dialog #yes_button {
+    background-color: #B5D5C5;
+}
+
+#quit_dialog #no_button {
+    background-color: #E97777;
+}

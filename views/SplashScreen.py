@@ -16,8 +16,11 @@ class SplashScreen(QMainWindow, Ui_MainWindow):
         self.home_screen: HomeScreen = None
         self.setupUi(self)
         self.counter_loading: int = 40
+        # Je créer mon timer
         self.timer: QTimer = QTimer()
+        # Je connecte la minuterie de mon timer à ma method loading qui va incrémenter la ProgressBar
         self.timer.timeout.connect(self.loading)
+        # Je démarre et j'incrémente mon timer toutes les 30 millisecondes
         self.timer.start(30)
         self.counter_loading_max: int = 100
         self.setWindowFlag(Qt.FramelessWindowHint)
@@ -41,7 +44,6 @@ class SplashScreen(QMainWindow, Ui_MainWindow):
 
     def launch_home_screen(self):
         """Method that run the home screen"""
-        print("ok")
         if self.home_screen is None:
             self.home_screen = HomeScreen()
             self.home_screen.show()

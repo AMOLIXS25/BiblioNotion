@@ -51,8 +51,7 @@
         "navigationButtons": [{
           "library_button": "library_page",
           "notes_button": "notes_page",
-          "settings_button": "settings_page",
-          "quit_button": "quit_page"
+          "settings_button": "settings_page"
         }]
       }
     ]

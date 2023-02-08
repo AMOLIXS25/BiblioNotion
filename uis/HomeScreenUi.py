@@ -21,6 +21,8 @@ from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
 
 from Custom_Widgets.Widgets import (QCustomSlideMenu, QCustomStackedWidget)
 from res import res
+from views.LibraryScreen import LibraryScreen
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -181,11 +183,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
         self.main_pages_container = QCustomStackedWidget(self.main_content_frame)
         self.main_pages_container.setObjectName(u"main_pages_container")
-        self.library_page = QWidget()
+        self.library_page = LibraryScreen()
         self.library_page.setObjectName(u"library_page")
-        self.label = QLabel(self.library_page)
-        self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(290, 160, 101, 17))
         self.main_pages_container.addWidget(self.library_page)
         self.notes_page = QWidget()
         self.notes_page.setObjectName(u"notes_page")
@@ -229,7 +228,6 @@ class Ui_MainWindow(object):
         self.notes_button.setText(QCoreApplication.translate("MainWindow", u"Notes", None))
         self.settings_button.setText(QCoreApplication.translate("MainWindow", u"Param\u00e8tre", None))
         self.quit_button.setText(QCoreApplication.translate("MainWindow", u"Quitter", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Library Page", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Notes_Page", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Settings Page", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Quit Page", None))
