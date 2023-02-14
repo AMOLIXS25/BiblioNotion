@@ -64,3 +64,20 @@ QuitDialog
 #quit_dialog #no_button {
     background-color: #E97777;
 }
+
+#update_book_button, #delete_book_button, #register_a_new_book_button {
+    border-radius: 3px;
+    padding: 8px;
+}
+
+#update_book_button {
+    background-color: #A0C3D2;
+}
+
+#delete_book_button {
+    background-color: #E97777;
+}
+
+#register_a_new_book_button {
+    background-color: #B5D5C5;
+}

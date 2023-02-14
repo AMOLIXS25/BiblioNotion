@@ -15,7 +15,7 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
-    <layout class="QVBoxLayout" name="verticalLayout">
+    <layout class="QVBoxLayout" name="library_screen_main_container">
      <item>
       <widget class="QLineEdit" name="lineEdit">
        <property name="placeholderText">

@@ -25,17 +25,17 @@ class Ui_library_screen(object):
         library_screen.resize(707, 343)
         self.verticalLayout_2 = QVBoxLayout(library_screen)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalLayout = QVBoxLayout()
-        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.library_screen_main_container = QVBoxLayout()
+        self.library_screen_main_container.setObjectName(u"library_screen_main_container")
         self.lineEdit = QLineEdit(library_screen)
         self.lineEdit.setObjectName(u"lineEdit")
 
-        self.verticalLayout.addWidget(self.lineEdit)
+        self.library_screen_main_container.addWidget(self.lineEdit)
 
         self.list_books_list_view = QListView(library_screen)
         self.list_books_list_view.setObjectName(u"list_books_list_view")
 
-        self.verticalLayout.addWidget(self.list_books_list_view)
+        self.library_screen_main_container.addWidget(self.list_books_list_view)
 
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
@@ -50,15 +50,15 @@ class Ui_library_screen(object):
         self.horizontalLayout.addWidget(self.delete_book_button)
 
 
-        self.verticalLayout.addLayout(self.horizontalLayout)
+        self.library_screen_main_container.addLayout(self.horizontalLayout)
 
         self.register_a_new_book_button = QPushButton(library_screen)
         self.register_a_new_book_button.setObjectName(u"register_a_new_book_button")
 
-        self.verticalLayout.addWidget(self.register_a_new_book_button)
+        self.library_screen_main_container.addWidget(self.register_a_new_book_button)
 
 
-        self.verticalLayout_2.addLayout(self.verticalLayout)
+        self.verticalLayout_2.addLayout(self.library_screen_main_container)
 
 
         self.retranslateUi(library_screen)

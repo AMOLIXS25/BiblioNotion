@@ -4,7 +4,8 @@ author: amolixs
 """
 from PySide6.QtWidgets import QWidget
 
-from uis.LibraryScreen import Ui_library_screen
+from Custom_Widgets.Widgets import loadJsonStyle
+from uis.LibraryScreenUi import Ui_library_screen
 
 
 class LibraryScreen(QWidget, Ui_library_screen):
@@ -12,5 +13,5 @@ class LibraryScreen(QWidget, Ui_library_screen):
     def __init__(self):
         """Library Screen's constructor"""
         super().__init__()
-        self.setupUi(self)
         self.setWindowTitle("Bibliothèque")
+        self.setupUi(self)
