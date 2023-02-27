@@ -2,6 +2,7 @@
 Module that manage QuitDialog for confirm to quit the app
 author: amolixs
 """
+import sys
 
 from PySide6.QtWidgets import QDialog
 from uis.QuitDialogUi import Ui_quit_dialog
@@ -12,7 +13,6 @@ class QuitDialog(QDialog, Ui_quit_dialog):
     def __init__(self, parent=None):
         """QuitDialog's constructor"""
         super().__init__(parent)
-        self.parent_widget = parent
         self.setupUi(self)
         self.setWindowTitle("Confirmation quitter")
         self.connect_signals_to_slots()
@@ -25,7 +25,7 @@ class QuitDialog(QDialog, Ui_quit_dialog):
     def on_yes_button_clicked(self):
         """Manage click on yes button"""
         # Je ferme le widget parent qui à ouvert initialement la QDialog
-        self.parent_widget.close()
+        sys.exit()
 
     def on_no_button_clicked(self):
         """Manage click on no button"""

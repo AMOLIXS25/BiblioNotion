@@ -16,6 +16,14 @@ QProgressBar#loading_progressBar::chunk {
 HomeScreen
 */
 
+#header_frame {
+    border: none;
+}
+
+#header_frame QFrame {
+    border: none;
+}
+
 #slide_menu_button {
     border: none;
     background-color: #313131;
@@ -31,17 +39,6 @@ HomeScreen
     background-color: #313131;
     border: none;
     padding: 8px;
-}
-
-#settings_button:pressed {
-    color: red;
-}
-
-#slide_menu_content_frame #library_button {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-left: 2px solid rgb(254, 206, 47);
-    background-color: #292929;
 }
 
 /*
@@ -65,19 +62,28 @@ QuitDialog
     background-color: #E97777;
 }
 
+/* LibraryScreen */
+
 #update_book_button, #delete_book_button, #register_a_new_book_button {
     border-radius: 3px;
     padding: 8px;
 }
 
 #update_book_button {
-    background-color: #A0C3D2;
+    background-color: #71B8D7;
 }
 
 #delete_book_button {
-    background-color: #E97777;
+    background-color: #DE5E5E;
 }
 
 #register_a_new_book_button {
-    background-color: #B5D5C5;
+    background-color: #72C39B;
+}
+
+/* RegisterBookScreen */
+#register_book_window QPushButton {
+    border-radius: 10px;
+    padding: 6px;
+    background-color: #E4B10A;
 }

@@ -339,7 +339,7 @@ summary = "Character encoding aliases for legacy web content"
 
 [metadata]
 lock_version = "4.1"
-content_hash = "sha256:bdf8c5a3cc186a242765451de612549b18c244001858aa3397b2532891eeadfd"
+content_hash = "sha256:0d76298f83d52459257696277a539ccae530b2b3cc19e1d995512588e648b417"
 
 [metadata.files]
 "attrs 22.2.0" = [
